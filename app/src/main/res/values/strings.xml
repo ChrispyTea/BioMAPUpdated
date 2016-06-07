@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">BioMAP</string>
+    <string name="title_activity_select_project">SelectProjectActivity</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_project_selection">ProjectSelectionActivity</string>
+
+    <string-array name="environment">
+        <item>Alpine</item>
+        <item>Aquatic</item>
+        <item>Cropland</item>
+        <item>Desert</item>
+        <item>Fynbos</item>
+        <item>Gardens</item>
+        <item>Mangrove</item>
+        <item>Savanna</item>
+    </string-array>
+
+    <string-array name="catnat">
+        <item>Cultivated</item>
+        <item>Natural</item>
+
+    </string-array>
+
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.g13c1921.biomap.MoreDetailsActivity"
+    android:background="@android:color/holo_green_light">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="More details"
+        android:id="@+id/textView17"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="User Suggested ID"
+        android:id="@+id/textView18"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/textView17"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:id="@+id/editText3"
+        android:layout_alignTop="@+id/textView18"
+        android:layout_alignParentEnd="true"
+        android:background="#ffffff" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scent present"
+        android:id="@+id/radioButton"
+        android:layout_below="@+id/editText3"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="No. of individuals"
+        android:id="@+id/textView19"
+        android:layout_below="@+id/radioButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="41dp" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:id="@+id/editText4"
+        android:layout_alignTop="@+id/textView19"
+        android:layout_alignStart="@+id/editText3"
+        android:background="#ffffff" />
+
+
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:id="@+id/cat_nat_spin"
+        android:entries="@array/catnat"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/editText4"
+        android:background="@color/material_grey_300"></Spinner>
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:id="@+id/editText8"
+        android:layout_below="@+id/cat_nat_spin"
+        android:layout_alignParentStart="false"
+        android:layout_marginTop="41dp"
+        android:background="#ffffff"
+        android:hint="Enter other details" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Change Growth Form"
+        android:id="@+id/textView20"
+        android:layout_below="@+id/editText8"
+        android:layout_toEndOf="@+id/radioButton"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Trees"
+        android:id="@+id/textView21"
+        android:layout_alignTop="@+id/textView20"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit later"
+        android:id="@+id/submit_later"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/cat_nat_spin"
+        android:textColor="#ffffff"
+        android:background="@color/material_grey_800"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/textView20"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:background="@color/material_grey_800" />
+
+</RelativeLayout>

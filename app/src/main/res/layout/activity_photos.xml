@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.g13c1921.biomap.PhotosActivity"
+    android:background="@android:color/holo_green_light">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Add Photos"
+        android:id="@+id/textView16"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flower Present"
+        android:id="@+id/checkBox"
+        android:layout_below="@+id/textView16"
+        android:layout_alignParentEnd="true"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fruit Present"
+        android:id="@+id/checkBox2"
+        android:layout_below="@+id/checkBox"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/checkBox"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/camera_image_button"
+        android:src="@drawable/cameraicon"
+        android:layout_alignTop="@+id/checkBox"
+        android:layout_toStartOf="@+id/checkBox" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose file"
+        android:id="@+id/choose"
+        android:layout_alignBottom="@+id/camera_image_button"
+        android:layout_alignEnd="@+id/checkBox2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:id="@+id/go_to_more_details"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:background="@color/material_grey_800"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/camera_image_button2"
+        android:src="@drawable/cameraicon"
+        android:layout_below="@+id/camera_image_button"
+        android:layout_alignEnd="@+id/camera_image_button" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flower Present"
+        android:id="@+id/checkBox3"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/camera_image_button2"
+        android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fruit present"
+        android:id="@+id/checkBox4"
+        android:textSize="20dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/camera_image_button2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHOOSE FILE"
+        android:id="@+id/button2"
+        android:layout_alignBottom="@+id/camera_image_button2"
+        android:layout_alignEnd="@+id/go_to_more_details" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/camera_image_button3"
+        android:src="@drawable/cameraicon"
+        android:layout_below="@+id/camera_image_button2"
+        android:layout_toStartOf="@+id/checkBox5" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flower Present"
+        android:id="@+id/checkBox5"
+        android:layout_below="@+id/button2"
+        android:layout_toEndOf="@+id/camera_image_button2"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fruit present"
+        android:id="@+id/checkBox6"
+        android:layout_below="@+id/checkBox5"
+        android:layout_toEndOf="@+id/camera_image_button3"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHOOSE FILE"
+        android:id="@+id/button3"
+        android:layout_below="@+id/checkBox6"
+        android:layout_alignEnd="@+id/go_to_more_details" />
+
+</RelativeLayout>
